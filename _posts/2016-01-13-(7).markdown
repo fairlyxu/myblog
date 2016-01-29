@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "[7]~!"
+date:   2016-01-12 07:16:51 +0800
+categories: jekyll update
+abstract: abstractabstractabstractabstractabstractabstractabstractabstractabstract
+---
+
+OH MOg
+I am born! thanks~ may be a Scourge of the world～
