@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: null
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ layout: default
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Lonely - Free bootstrap 3 one page template</title>
+    <title>  Free bootstrap 3 one page template</title>
     <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -47,86 +47,42 @@ layout: default
 	<!-- /Section: intro -->
 	
     <!-- Navigation -->
-    <div id="navigation">
+    {% include nav.html %}
+    <!-- <div id="navigation">
         <nav class="navbar navbar-custom" role="navigation">
                               <div class="container">
                                     <div class="row">
                                           <div class="col-md-12">
                          
-                                          <!-- Brand and toggle get grouped for better mobile display -->
+                                          Brand and toggle get grouped for better mobile display
                                           <div class="navbar-header">
                                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                                                 <i class="fa fa-bars"></i>
                                                 </button>
                                           </div>
-                                                      <!-- Collect the nav links, forms, and other content for toggling -->
+                                                      Collect the nav links, forms, and other content for toggling
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav">
                                                                   <li class="active"><a href="#intro">Home</a></li>
-                                                                  <li><a href="#blog">blog post</a></li>
+                                                                  <li><a href="blog/index.html">blog post</a></li>
                                                                   <li><a href="#gadgets">it gadgets</a></li>
-                                                                  <li><a href="#life">life gallery</a></li> 
+                                                                  <li><a href="life/index.html">life gallery</a></li> 
                                                                   <li><a href="#me">about me</a></li>
                                                             </ul>
                                                       </div>
-                                                      <!-- /.Navbar-collapse -->
+                                                      /.Navbar-collapse
                              
                                           </div>
                                     </div>
                               </div>
-                              <!-- /.container -->
+                              /.container
                         </nav>
-    </div> 
+    </div> -->
     <!-- /Navigation -->  
-
-	<!-- Section: blog paper -->
-    <section id="blog" class="home-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					
-						<div class="section-heading text-center">
-						<div class="wow bounceInDown" data-wow-delay="0.1s">
-							<h2>My blog post</h2>
-						</div>
-						<p class="wow bounceInUp" data-wow-delay="0.1s">include python，java，js，h5，css，sql，os，ml and so on aha～ :(</p>
-						</div>
-					
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-				
-					<img src="img/img1.jpg" class="img-responsive img-rounded" alt="" />
-				</div>		
-				<div class="col-md-8">
-
-					<ul class="post-list">
-        			{% for post in site.posts limit:3 %}
-        			<li>
-        			 <p><strong> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        			</strong>
-        			 <span class="post-meta" style="float: right">{{ post.date | date: "%b %-d, %Y" }}</span>
-        			<blockquote>
-        			{{post.abstract }}  
-					Pri pertinacia elaboraret te, an eirmod delicatissimi nec. 哈哈哈哈
-					</blockquote>
-				   </p>
-        			</li>
-        			{% endfor %}
-        		    </ul>
-					<a href="blog/index.html" class="btn btn-skin btn-lg btn-scroll">See more about my blogs</a>
-				</div>
-			</div>		
-		</div>
-	</section>
-	<!-- /Section: blog paper -->
+		
 	<!-- /Section: separator -->
 	<!-- Section: gadgets -->
-    <section id="gadgets" class="home-section text-center bg-gray">
+    <!-- <section id="gadgets" class="home-section text-center bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -154,26 +110,24 @@ layout: default
         	</div>
         </div>
 
-    </section>
+    </section> -->
     <!-- /Section: gadgets -->
 	
 	<!-- Section: mylife -->
-    <section id="life" class="home-section text-center bg-gray">
-
-			<div class="container">
+    <!-- <section id="life" class="home-section text-center bg-gray">
+        <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow bounceInDown" data-wow-delay="0.05s">
-					<div class="section-heading">
-						<h2>My photo gallery</h2>
-						<p>Take a look at my personal life moment, enjoy</p>
-					</div>
+					   <div class="section-heading">
+						  <h2>My photo gallery</h2>
+						  <p>Take a look at my personal life moment, enjoy</p>
+					   </div>
 					</div>
 				</div>
 			</div>
-			</div>
-
-		<div class="container">
+		</div>
+        <div class="container">
 			<div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12" >
 					<div class="wow bounceInUp" data-wow-delay="0.1s">
@@ -191,11 +145,11 @@ layout: default
                 </div>
             </div>
 		</div>
-	</section>
+	</section> -->
 	<!-- /Section: my life -->
 	
 	<!-- Section: contact -->
-    <section id="me" class="home-section text-center">
+    <!-- <section id="me" class="home-section text-center">
 		<div class="heading-contact">
 			<div class="container">
 			<div class="row">
@@ -213,8 +167,7 @@ layout: default
 			</div>
 		</div>
 		<div class="container">
-
-    <div class="row">
+        <div class="row">
         <div class="col-lg-8 col-md-offset-2">
             <div class="form-wrapper marginbot-50">
                 <form id="contact-form">
@@ -260,27 +213,24 @@ layout: default
 					<p class="lead"><i class="fa fa-phone"></i> more about  me +1ddddddd</p>
 			</div>
         </div>
-
-    </div>	
-
-		</div>
-	</section>
+        </div>
+        </div>
+	</section> -->
 	<!-- /Section: contact -->
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<p>&copy;Copyright 2016 . fairlyxu . design by  Bootstrap Themes. custumization by fairly</p>
-				</div>
-                <!-- 
+    {% include footer.html%}
+	<!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <p>&copy;Copyright 2016 . fairlyxu . design by  Bootstrap Themes. custumization by fairly</p>
+                </div>
                     All links in the footer should remain intact. 
-                    Licenseing information is available at: http://bootstraptaste.com/license/
-                    You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Lonely
-                -->
-			</div>	
-		</div>
-	</footer>
+                        Licenseing information is available at: http://bootstraptaste.com/license/
+                        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Lonely
+            </div>    
+        </div>
+    </footer> -->
 
     <!-- Core JavaScript Files -->
     <script src="js/jquery.min.js"></script>

@@ -1,0 +1,127 @@
+---
+layout: default
+---
+<!-- Section: blog paper -->
+<section id="blog" class="home-section">
+		<div class="container">
+      bbb
+			<!-- <div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+						<div class="section-heading text-center">
+						<div class="wow bounceInDown" data-wow-delay="0.1s">
+							<h2>My blog post</h2>
+						</div>
+						<p class="wow bounceInUp" data-wow-delay="0.1s">include python，java，js，h5，css，sql，os，ml and so on aha～ :(</p>
+						</div>
+				</div>
+			</div> -->
+		</div>
+    <div class="container">
+      aaaa
+      <!--文章列表-->
+			<!-- <div class="row">
+				<div class="col-md-5 col-lg-5">
+          <ul class="post-list">
+              {% for post in site.posts limit:1 %}
+            <li>
+              <p>
+                <strong> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
+                <span class="post-meta" style="float: right">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <blockquote>
+                </blockquote>
+              </p>
+            </li>
+              {% endfor %}
+          </ul>
+
+          <ul class="post-list">
+              {% for post in site.posts limit:3 %}
+            <li>
+              <p>
+                <strong> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
+                <span class="post-meta" style="float: right">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <blockquote>
+                </blockquote>
+              </p>
+            </li>
+              {% endfor %}
+          </ul>
+					
+				</div>-->
+        <!--列表索引-->		
+				<!-- <div class="col-md-3 col-lg-3">
+          <div class = "category-list">
+            {% for category in site.categories %}
+            <h2>{{ category | first }}</h2>
+            <span>{{ category | last | size }}</span>
+            <ul class="arc-list">
+                {% for post in category.last %}
+                <li>{{ post.date | date:"%d/%m/%Y"}} <a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endfor %}   
+          </div>
+				</div> 
+			</div>	 -->	
+		</div>
+</section>
+	<!-- /Section: blog paper -->
+
+<!-- 遍历分页后的文章 -->
+<!-- {% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+ 
+{% endfor %} -->
+
+
+<!-- 
+<div id="post-pagination" class="pagination">
+  {% if paginator.previous_page %}
+    <p class="previous">
+      {% if paginator.previous_page == 1 %}
+        <a href="/">Previous</a>
+      {% else %}
+        <a href="{{ paginator.previous_page_path }}">Previous</a>
+      {% endif %}
+    </p>
+  {% else %}
+    <p class="previous disabled">
+      <span>Previous</span>
+    </p>
+  {% endif %}
+
+  <ul class="pages">
+    <li class="page">
+      {% if paginator.page == 1 %}
+        <span class="current-page">1</span>
+      {% else %}
+        <a href="/blog/index.html">1</a>
+      {% endif %}
+    </li>
+
+    {% for count in (2..paginator.total_pages) %}
+      <li class="page">
+        {% if count == paginator.page %}
+          <span class="current-page">{{ count }}</span>
+        {% else %}
+          <a href="/blog/page{{ count }}">{{ count }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.next_page %}
+    <p class="next">
+      <a href="{{ paginator.next_page_path }}">Next</a>
+    </p>
+  {% else %}
+    <p class="next disabled">
+      <span>Next</span>
+    </p>
+  {% endif %}
+
+</div>
+ -->

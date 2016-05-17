@@ -1,6 +1,22 @@
+<!DOCTYPE html>
+<html>
 
   {% include head.html %}
-  {{ content }}
-     
 
+  <body>
+  <!-- default template, include title,navigation,footer,  apply to all pages except index.html-->
 
+    {% include nav.html %}
+    <div class="content">
+      {{ content }} 
+    </div>
+ 
+    
+    
+    {% include footer.html %}
+
+  </body>
+
+</html>
+ 
+ 

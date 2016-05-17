@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-01-12 07:16:51 +0800
-categories: jekyll update
+categories: [jekyll,update]
 ---
 
 OH MOg
