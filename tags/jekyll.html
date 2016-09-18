@@ -1,13 +1,15 @@
 ---
-layout: default
+layout: tagpage
+tag: jekyll
 ---
+
 <!-- Section: blog paper -->
  
-		<div class="container">
-			<div class="section-heading row">
-					<h2 class="col-md-offset-1 col-lg-offset-2">My blog post</h2>
-			</div>
+	<div class="container">
+		<div class="section-heading row">
+			<h2 class="col-md-offset-1 col-lg-offset-2">My blog post</h2>
 		</div>
+	</div>
     <div class="container wrapper">
       <!--文章列表-->
 			<div class="row">
@@ -46,18 +48,19 @@ layout: default
         	
   			<div class="col-md-3 col-lg-3 col-md-offset-2">
           <!-- 分类索引--> 
-          {% include category.html%}
-          <!-- <div class = "category-list">
+          <div class = "category-list">
               <div class="category-head">category</div><hr>
               <div class="category-content">
                 {% for category in site.categories %}
                 <h5>{{ category | first }}<span>({{ category | last | size }})</span></h5> 
                 {% endfor %} 
               </div>  
-          </div> -->
-           {% include tag.html%}
+          </div>
           <!--列表索引--> 
-        </div>
+          <div class = "category-list">
+            blog  
+          </div>
+  			</div>
       </div>
 		</div>		
  

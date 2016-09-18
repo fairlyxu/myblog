@@ -365,7 +365,49 @@ hr {
 }
 
 .post-list{
-  margin-left: 30px;
+  margin-left: 10px;
+}
+.post-list li{
+  margin-bottom: 0px;
+}
+.post-list li p{
+  margin-bottom: 6px;
+}
+
+
+.category-list{
+  background-color: rgb(219, 245, 226); 
+  padding: 15px;
+  margin-bottom: 10px;
+  border:2px solid rgba(139, 243, 157, 0.23);
+  border-radius:15px;
+}
+
+#top-post,#last-post{
+  border-top-style: none;
+    box-shadow: 2px 2px 5px #12960A;
+    padding: 5px;
+    border-radius: 5px;
+  
+}
+
+ 
+
+/* ===========================
+--- life
+============================ */
+
+
+#top-post-life,#last-post-life{
+   border-top-style: none;
+    box-shadow: 2px 2px 5px #16add0;
+     padding: 5px;
+    border-radius: 5px;
+  
+}
+
+.topmargin{
+  margin-top: 50px;
 }
 
 /* ==========================
