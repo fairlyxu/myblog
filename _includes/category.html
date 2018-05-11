@@ -1,8 +1,0 @@
-<div class = "category-list">
- 	<div class="category-head">category</div><hr>
-	<div class="category-content">
-            {% for category in site.categories %}
-    		<a href = "/tags/{{ category | first }}.html" ><h5>{{ category | first }}<span>({{ category | last | size }})</span></h5> </a>
-        	{% endfor %} 
-	</div>  
-</div>
